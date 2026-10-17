@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "npx nodemon",
-    "start": "npm run build && node build/index.js",
+    "start:dev": "node api.js && npx nodemon",
+    "start": "node api.js && npm run build && node build/index.js",
     "test": "tsc --module commonjs && jest build/"
   },
   "keywords": [],
